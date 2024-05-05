@@ -1,36 +1,46 @@
-2024-05-05 11:01:15,575 - WARNING - Wrong type category: е should be "r" or "d".
-2024-05-05 11:01:18,439 - WARNING - Wrong type category: t should be "r" or "d".
-2024-05-05 11:01:26,669 - WARNING - Wrong type of transaction value: <class 'str'> should be int
-2024-05-05 11:01:29,451 - WARNING - Wrong type of transaction value: <class 'str'> should be int
-2024-05-05 11:01:32,525 - WARNING - Wrong type of transaction value: <class 'str'> should be int
-2024-05-05 11:01:56,279 - WARNING - Wrong type of transaction value: <class 'str'> should be int
-2024-05-05 11:01:57,255 - WARNING - Wrong type of transaction value: <class 'str'> should be int
-2024-05-05 11:02:02,279 - WARNING - Wrong type of transaction value: <class 'str'> should be int
-2024-05-05 11:03:11,320 - INFO - Balance was changed, curren balance: -9000
-2024-05-05 11:03:11,320 - INFO - Add transaction: r : 9000
-2024-05-05 11:08:43,377 - INFO - Balance was changed, curren balance: 9000
-2024-05-05 11:08:43,377 - INFO - Add transaction: d : 9000
-2024-05-05 11:09:36,432 - INFO - Balance was changed, curren balance: 9000
-2024-05-05 11:09:36,432 - INFO - Add transaction: d : 9000
-2024-05-05 11:09:54,097 - INFO - Balance was changed, curren balance: 9000
-2024-05-05 11:09:54,097 - INFO - Add transaction: d : 9000
-2024-05-05 11:10:56,607 - INFO - Balance was changed, curren balance: 9000
-2024-05-05 11:10:56,607 - INFO - Add transaction: d : 9000
-2024-05-05 11:11:47,626 - INFO - Balance was changed, curren balance: 999
-2024-05-05 11:11:47,627 - INFO - Add transaction: d : 999
-2024-05-05 11:12:03,791 - INFO - Balance was changed, curren balance: 9000
-2024-05-05 11:12:03,791 - INFO - Add transaction: d : 9000
-2024-05-05 11:12:49,090 - INFO - Balance was changed, curren balance: 999999
-2024-05-05 11:12:49,091 - INFO - Add transaction: d : 999999
-2024-05-05 11:13:11,015 - INFO - Balance was changed, curren balance: 9000
-2024-05-05 11:13:11,016 - INFO - Add transaction: d : 9000
-2024-05-05 11:13:18,301 - INFO - Balance was changed, curren balance: 8112
-2024-05-05 11:13:18,301 - INFO - Add transaction: r : 888
-2024-05-05 11:22:44,741 - INFO - Balance was changed, current balance: 9000
-2024-05-05 11:22:44,742 - INFO - Add transaction: d : 9000
-2024-05-05 11:22:49,982 - INFO - Balance was changed, current balance: 8200
-2024-05-05 11:22:49,983 - INFO - Add transaction: r : 800
-2024-05-05 11:23:13,694 - INFO - Balance was changed, current balance: 90000
-2024-05-05 11:23:13,694 - INFO - Add transaction: d : 90000
-2024-05-05 11:23:21,410 - INFO - Balance was changed, current balance: 80000
-2024-05-05 11:23:21,410 - INFO - Add transaction: r : 10000
+2024-05-05 17:27:25,862 - INFO - Balance was changed, current balance: 90000.
+2024-05-05 17:27:25,862 - INFO - Add transaction: d : 90000
+2024-05-05 17:27:25,862 - INFO - Write transaction in json id: 982f9b60-0aeb-11ef-9b09-05761b21ff18
+2024-05-05 17:27:29,838 - WARNING - Wrong type category: gfsgf should be "r" or "d".
+2024-05-05 17:27:42,286 - INFO - Balance was changed, current balance: 90100.
+2024-05-05 17:27:42,286 - INFO - Add transaction: d : 100
+2024-05-05 17:27:42,286 - INFO - Write transaction in json id: a1f9a32a-0aeb-11ef-9b09-05761b21ff18
+2024-05-05 17:28:00,551 - WARNING - Wrong type of transaction value: <class 'str'> should be int
+2024-05-05 17:28:11,650 - INFO - Balance was changed, current balance: 89400.
+2024-05-05 17:28:11,650 - INFO - Add transaction: r : 700
+2024-05-05 17:28:11,650 - INFO - Write transaction in json id: b37a3e3e-0aeb-11ef-9b09-05761b21ff18
+2024-05-05 17:28:34,832 - INFO - Write transaction in json id: b37a3e3e-0aeb-11ef-9b09-05761b21ff18
+2024-05-05 17:29:04,479 - INFO - Balance was changed, current balance: 88500.
+2024-05-05 17:29:04,479 - INFO - Add transaction: r : 900
+2024-05-05 17:29:04,480 - INFO - Write transaction in json id: d2f767aa-0aeb-11ef-9b09-05761b21ff18
+2024-05-05 17:29:11,142 - INFO - Write transaction in json id: a1f9a32a-0aeb-11ef-9b09-05761b21ff18
+2024-05-05 17:31:45,149 - WARNING - Position for delete out of range: 4, max: 2}
+2024-05-05 17:38:17,947 - WARNING - Position for delete out of range: 3, max: 2}
+2024-05-05 17:38:33,396 - WARNING - Position for delete out of range: 3, max: 2}
+2024-05-05 17:40:08,942 - WARNING - Position for delete out of range: 3, max: 2}
+2024-05-05 17:40:26,777 - WARNING - Position for delete out of range: 3, max: 2}
+2024-05-05 17:41:10,457 - WARNING - Position for delete out of range: 3, max: 2}
+2024-05-05 17:41:33,935 - WARNING - Position for delete out of range: 3, max: 2}
+2024-05-05 17:41:38,230 - WARNING - Position for delete out of range: 3, max: 2}
+2024-05-05 17:41:40,427 - WARNING - Position for delete out of range: 3, max: 2}
+2024-05-05 17:41:42,267 - INFO - Write transaction in json id: d2f767aa-0aeb-11ef-9b09-05761b21ff18
+2024-05-05 17:42:02,921 - INFO - Balance was changed, current balance: 8888.
+2024-05-05 17:42:02,921 - INFO - Add transaction: d : 8888
+2024-05-05 17:42:02,921 - INFO - Write transaction in json id: a2f422ee-0aed-11ef-9b09-05761b21ff18
+2024-05-05 17:42:34,122 - WARNING - Position for delete out of range: 2, max: 2}
+2024-05-05 17:42:46,820 - INFO - Write transaction in json id: a2f422ee-0aed-11ef-9b09-05761b21ff18
+2024-05-05 17:43:49,888 - INFO - Write transaction in json id: 982f9b60-0aeb-11ef-9b09-05761b21ff18
+2024-05-05 17:44:33,405 - INFO - Balance was changed, current balance: 434.
+2024-05-05 17:44:33,405 - INFO - Add transaction: d : 434
+2024-05-05 17:44:33,406 - INFO - Write transaction in json id: fca63cd2-0aed-11ef-9b09-05761b21ff18
+2024-05-05 17:44:39,735 - INFO - Balance was changed, current balance: 140.
+2024-05-05 17:44:39,735 - INFO - Add transaction: r : 294
+2024-05-05 17:44:39,735 - INFO - Write transaction in json id: 006c126a-0aee-11ef-9b09-05761b21ff18
+2024-05-05 17:44:42,368 - INFO - Write transaction in json id: 006c126a-0aee-11ef-9b09-05761b21ff18
+2024-05-05 17:46:30,670 - INFO - Balance was changed, current balance: 3757385.
+2024-05-05 17:46:30,670 - INFO - Add transaction: d : 3757385
+2024-05-05 17:46:30,671 - INFO - Write transaction in json id: 428b67ae-0aee-11ef-9b09-05761b21ff18
+2024-05-05 17:46:36,371 - INFO - Balance was changed, current balance: 7611370.
+2024-05-05 17:46:36,371 - INFO - Add transaction: d : 3853985
+2024-05-05 17:46:36,371 - INFO - Write transaction in json id: 45f14788-0aee-11ef-9b09-05761b21ff18
+2024-05-05 17:46:39,505 - WARNING - Position for delete out of range: -1, max: 3}
