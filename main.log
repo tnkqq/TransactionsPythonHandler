@@ -1,0 +1,36 @@
+2024-05-05 11:01:15,575 - WARNING - Wrong type category: е should be "r" or "d".
+2024-05-05 11:01:18,439 - WARNING - Wrong type category: t should be "r" or "d".
+2024-05-05 11:01:26,669 - WARNING - Wrong type of transaction value: <class 'str'> should be int
+2024-05-05 11:01:29,451 - WARNING - Wrong type of transaction value: <class 'str'> should be int
+2024-05-05 11:01:32,525 - WARNING - Wrong type of transaction value: <class 'str'> should be int
+2024-05-05 11:01:56,279 - WARNING - Wrong type of transaction value: <class 'str'> should be int
+2024-05-05 11:01:57,255 - WARNING - Wrong type of transaction value: <class 'str'> should be int
+2024-05-05 11:02:02,279 - WARNING - Wrong type of transaction value: <class 'str'> should be int
+2024-05-05 11:03:11,320 - INFO - Balance was changed, curren balance: -9000
+2024-05-05 11:03:11,320 - INFO - Add transaction: r : 9000
+2024-05-05 11:08:43,377 - INFO - Balance was changed, curren balance: 9000
+2024-05-05 11:08:43,377 - INFO - Add transaction: d : 9000
+2024-05-05 11:09:36,432 - INFO - Balance was changed, curren balance: 9000
+2024-05-05 11:09:36,432 - INFO - Add transaction: d : 9000
+2024-05-05 11:09:54,097 - INFO - Balance was changed, curren balance: 9000
+2024-05-05 11:09:54,097 - INFO - Add transaction: d : 9000
+2024-05-05 11:10:56,607 - INFO - Balance was changed, curren balance: 9000
+2024-05-05 11:10:56,607 - INFO - Add transaction: d : 9000
+2024-05-05 11:11:47,626 - INFO - Balance was changed, curren balance: 999
+2024-05-05 11:11:47,627 - INFO - Add transaction: d : 999
+2024-05-05 11:12:03,791 - INFO - Balance was changed, curren balance: 9000
+2024-05-05 11:12:03,791 - INFO - Add transaction: d : 9000
+2024-05-05 11:12:49,090 - INFO - Balance was changed, curren balance: 999999
+2024-05-05 11:12:49,091 - INFO - Add transaction: d : 999999
+2024-05-05 11:13:11,015 - INFO - Balance was changed, curren balance: 9000
+2024-05-05 11:13:11,016 - INFO - Add transaction: d : 9000
+2024-05-05 11:13:18,301 - INFO - Balance was changed, curren balance: 8112
+2024-05-05 11:13:18,301 - INFO - Add transaction: r : 888
+2024-05-05 11:22:44,741 - INFO - Balance was changed, current balance: 9000
+2024-05-05 11:22:44,742 - INFO - Add transaction: d : 9000
+2024-05-05 11:22:49,982 - INFO - Balance was changed, current balance: 8200
+2024-05-05 11:22:49,983 - INFO - Add transaction: r : 800
+2024-05-05 11:23:13,694 - INFO - Balance was changed, current balance: 90000
+2024-05-05 11:23:13,694 - INFO - Add transaction: d : 90000
+2024-05-05 11:23:21,410 - INFO - Balance was changed, current balance: 80000
+2024-05-05 11:23:21,410 - INFO - Add transaction: r : 10000
