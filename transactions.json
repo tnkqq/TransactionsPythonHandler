@@ -8,11 +8,18 @@
             "id": "e22c1674-0bb2-11ef-811d-00155d2b3ba3"
         },
         {
-            "date": "2024-05-06 17:14:11.551913",
-            "category": "r",
-            "value": 5000,
-            "description": "iphone",
-            "id": "e9273565-0bb2-11ef-8f08-00155d2b3ba3"
+            "date": "2024-05-07 01:15:20.219255",
+            "category": "b",
+            "value": 2000,
+            "description": "test_description",
+            "id": "203840fa-0bf6-11ef-9a88-00155d2b3ba3"
+        },
+        {
+            "date": "2024-05-07 01:15:20.229896",
+            "category": "d",
+            "value": 3000,
+            "description": "NEW_DESCRIPTION",
+            "id": "2039e06b-0bf6-11ef-ba1d-00155d2b3ba3"
         }
     ]
 }
