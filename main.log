@@ -12,3 +12,19 @@
 2024-05-06 17:06:03,638 - INFO - Balance was changed, current balance: -20080.
 2024-05-06 17:06:03,638 - INFO - Add transaction: r : 65334
 2024-05-06 17:06:03,639 - INFO - Write transaction in json id: c6557e1c-0bb1-11ef-a5db-00155d2b3ba3
+2024-05-06 17:12:44,077 - INFO - Balance was changed, current balance: 9000.
+2024-05-06 17:12:44,077 - INFO - Add transaction: d : 9000
+2024-05-06 17:12:44,078 - INFO - Write transaction in json id: b501cfda-0bb2-11ef-8847-00155d2b3ba3
+2024-05-06 17:13:00,599 - INFO - Balance was changed, current balance: 2000.
+2024-05-06 17:13:00,599 - INFO - Add transaction: r : 7000
+2024-05-06 17:13:00,600 - INFO - Write transaction in json id: bedcac7c-0bb2-11ef-9f05-00155d2b3ba3
+2024-05-06 17:13:31,034 - WARNING - Wrong type category: в should be "r" or "d".
+2024-05-06 17:13:36,814 - INFO - Balance was changed, current balance: 727832.
+2024-05-06 17:13:36,815 - INFO - Add transaction: d : 725832
+2024-05-06 17:13:36,816 - INFO - Write transaction in json id: d472bb88-0bb2-11ef-b4e2-00155d2b3ba3
+2024-05-06 17:13:59,851 - INFO - Balance was changed, current balance: 9000.
+2024-05-06 17:13:59,851 - INFO - Add transaction: d : 9000
+2024-05-06 17:13:59,852 - INFO - Write transaction in json id: e22c1674-0bb2-11ef-811d-00155d2b3ba3
+2024-05-06 17:14:11,552 - INFO - Balance was changed, current balance: 4000.
+2024-05-06 17:14:11,552 - INFO - Add transaction: r : 5000
+2024-05-06 17:14:11,553 - INFO - Write transaction in json id: e9273565-0bb2-11ef-8f08-00155d2b3ba3

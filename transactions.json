@@ -1,0 +1,18 @@
+{
+    "transactions": [
+        {
+            "date": "2024-05-06 17:13:59.839838",
+            "category": "d",
+            "value": 9000,
+            "description": "cash",
+            "id": "e22c1674-0bb2-11ef-811d-00155d2b3ba3"
+        },
+        {
+            "date": "2024-05-06 17:14:11.551913",
+            "category": "r",
+            "value": 5000,
+            "description": "iphone",
+            "id": "e9273565-0bb2-11ef-8f08-00155d2b3ba3"
+        }
+    ]
+}
