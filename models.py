@@ -1,7 +1,7 @@
 import uuid
 import json
 import logging
-
+import datetime
 from datetime import date
 
 
@@ -9,7 +9,7 @@ class Transaction:
     """Transaction Model"""
 
     def __init__(self, category: str, value: int, description: str, **kwargs):
-        self.date = kwargs.get("date", str(date.today()))
+        self.date = kwargs.get("date", str(datetime.datetime.now()))
         self.category = category
         self.value = value
         self.description = description
@@ -24,6 +24,12 @@ class Transaction:
             "id": self.id,
         }
 
+    def edit_transaction(self, date: str, id: int, *args):
+        params = args[0]
+        self.id = id
+        self.date = date
+        self.category, self.value, self.description = params
+
     @classmethod
     def json_build(cls, json_data):
         return cls(**json_data)
@@ -35,7 +41,7 @@ class Wallet:
     def __init__(self):
         self.balance: int = 0
         self.transactions_count: int
-        self.transactions = self.init_transactions()
+        self.transactions: list = self.init_transactions()
 
     def init_transactions(self) -> list:
         transactions_in_f = self.read_transactions()["transactions"]
@@ -43,6 +49,10 @@ class Wallet:
         for t in transactions_in_f:
             transaction = Transaction.json_build(t)
             transactions.append(transaction)
+            if t.get('category') == 'r':
+                self.balance-=t.get('value')
+            else:
+                self.balance+=t.get('value')
         return transactions
 
     #############
@@ -71,25 +81,40 @@ class Wallet:
         self.transactions.append(transaction)
         self.change_value(category, value)
         logging.info("Add transaction: %s : %s", category, value)
-        self.write_transaction(transaction)
+        self.__write_transaction(transaction)
         return True
 
     def delete_transaction(self, position: int) -> bool:
         """'Delete transaction method."""
-        print(len(self.transactions))
-        if position>=len(self.transactions) or position <= 0:
+        if position>=len(self.transactions) or position < 0:
             logging.warning('Position for delete out of range: %s, max: %s}', position, len(self.transactions))
             return False
+        transaction = self.transactions[position]
+        if transaction.category == 'r':
+            self.balance += transaction.value
+        else:
+            self.balance -= transaction.value
         pk = self.transactions[position].id
-        self.delete_transaction_from_json(pk)
+        self.__delete_transaction_from_json(pk)
         self.transactions.pop(position)
+        return True
+
+    def edit_transaction(self, position: int, *args) -> bool:
+        if position>=len(self.transactions) or position < 0:
+            logging.warning('Position for edit out of range: %s, max: %s}', position, len(self.transactions))
+            return False
+        transaction = self.transactions[position]
+        self.__delete_transaction_from_json(transaction.id)
+        transaction.edit_transaction(transaction.date, transaction.id,*args)
+        self.change_value(transaction.category, transaction.value)
+        self.__write_transaction(transaction)
         return True
 
     #############
     # Json file handlers
     #############
 
-    def write_transaction(self, transaction: Transaction):
+    def __write_transaction(self, transaction: Transaction) -> bool:
         """Write transaction in json file."""
         transaction = transaction.get_transaction_data()
         data = self.read_transactions()
@@ -97,8 +122,10 @@ class Wallet:
         with open("transactions.json", "w") as f:
             json.dump(data, f, indent=4)
         logging.info("Write transaction in json id: %s", transaction.get("id"))
+        return True 
 
-    def delete_transaction_from_json(self, pk):
+    def __delete_transaction_from_json(self, pk: str) -> bool:
+        '''Delete transaction from json file method.'''
         data = self.read_transactions()["transactions"]
         filtred_data = [t for t in data if t.get("id") != pk]
         data = {}
@@ -106,8 +133,10 @@ class Wallet:
         with open("transactions.json", "w") as f:
             json.dump(data, f, indent=4)
         logging.info("Write transaction in json id: %s", pk)
+        return True 
 
-    def read_transactions(self):
+    def read_transactions(self) -> dict:
+        '''Read transactions from json file method.'''
         try:
             with open("transactions.json", "r") as f:
                 data = json.load(f)

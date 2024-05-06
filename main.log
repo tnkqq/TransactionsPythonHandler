@@ -1,46 +1,14 @@
-2024-05-05 17:27:25,862 - INFO - Balance was changed, current balance: 90000.
-2024-05-05 17:27:25,862 - INFO - Add transaction: d : 90000
-2024-05-05 17:27:25,862 - INFO - Write transaction in json id: 982f9b60-0aeb-11ef-9b09-05761b21ff18
-2024-05-05 17:27:29,838 - WARNING - Wrong type category: gfsgf should be "r" or "d".
-2024-05-05 17:27:42,286 - INFO - Balance was changed, current balance: 90100.
-2024-05-05 17:27:42,286 - INFO - Add transaction: d : 100
-2024-05-05 17:27:42,286 - INFO - Write transaction in json id: a1f9a32a-0aeb-11ef-9b09-05761b21ff18
-2024-05-05 17:28:00,551 - WARNING - Wrong type of transaction value: <class 'str'> should be int
-2024-05-05 17:28:11,650 - INFO - Balance was changed, current balance: 89400.
-2024-05-05 17:28:11,650 - INFO - Add transaction: r : 700
-2024-05-05 17:28:11,650 - INFO - Write transaction in json id: b37a3e3e-0aeb-11ef-9b09-05761b21ff18
-2024-05-05 17:28:34,832 - INFO - Write transaction in json id: b37a3e3e-0aeb-11ef-9b09-05761b21ff18
-2024-05-05 17:29:04,479 - INFO - Balance was changed, current balance: 88500.
-2024-05-05 17:29:04,479 - INFO - Add transaction: r : 900
-2024-05-05 17:29:04,480 - INFO - Write transaction in json id: d2f767aa-0aeb-11ef-9b09-05761b21ff18
-2024-05-05 17:29:11,142 - INFO - Write transaction in json id: a1f9a32a-0aeb-11ef-9b09-05761b21ff18
-2024-05-05 17:31:45,149 - WARNING - Position for delete out of range: 4, max: 2}
-2024-05-05 17:38:17,947 - WARNING - Position for delete out of range: 3, max: 2}
-2024-05-05 17:38:33,396 - WARNING - Position for delete out of range: 3, max: 2}
-2024-05-05 17:40:08,942 - WARNING - Position for delete out of range: 3, max: 2}
-2024-05-05 17:40:26,777 - WARNING - Position for delete out of range: 3, max: 2}
-2024-05-05 17:41:10,457 - WARNING - Position for delete out of range: 3, max: 2}
-2024-05-05 17:41:33,935 - WARNING - Position for delete out of range: 3, max: 2}
-2024-05-05 17:41:38,230 - WARNING - Position for delete out of range: 3, max: 2}
-2024-05-05 17:41:40,427 - WARNING - Position for delete out of range: 3, max: 2}
-2024-05-05 17:41:42,267 - INFO - Write transaction in json id: d2f767aa-0aeb-11ef-9b09-05761b21ff18
-2024-05-05 17:42:02,921 - INFO - Balance was changed, current balance: 8888.
-2024-05-05 17:42:02,921 - INFO - Add transaction: d : 8888
-2024-05-05 17:42:02,921 - INFO - Write transaction in json id: a2f422ee-0aed-11ef-9b09-05761b21ff18
-2024-05-05 17:42:34,122 - WARNING - Position for delete out of range: 2, max: 2}
-2024-05-05 17:42:46,820 - INFO - Write transaction in json id: a2f422ee-0aed-11ef-9b09-05761b21ff18
-2024-05-05 17:43:49,888 - INFO - Write transaction in json id: 982f9b60-0aeb-11ef-9b09-05761b21ff18
-2024-05-05 17:44:33,405 - INFO - Balance was changed, current balance: 434.
-2024-05-05 17:44:33,405 - INFO - Add transaction: d : 434
-2024-05-05 17:44:33,406 - INFO - Write transaction in json id: fca63cd2-0aed-11ef-9b09-05761b21ff18
-2024-05-05 17:44:39,735 - INFO - Balance was changed, current balance: 140.
-2024-05-05 17:44:39,735 - INFO - Add transaction: r : 294
-2024-05-05 17:44:39,735 - INFO - Write transaction in json id: 006c126a-0aee-11ef-9b09-05761b21ff18
-2024-05-05 17:44:42,368 - INFO - Write transaction in json id: 006c126a-0aee-11ef-9b09-05761b21ff18
-2024-05-05 17:46:30,670 - INFO - Balance was changed, current balance: 3757385.
-2024-05-05 17:46:30,670 - INFO - Add transaction: d : 3757385
-2024-05-05 17:46:30,671 - INFO - Write transaction in json id: 428b67ae-0aee-11ef-9b09-05761b21ff18
-2024-05-05 17:46:36,371 - INFO - Balance was changed, current balance: 7611370.
-2024-05-05 17:46:36,371 - INFO - Add transaction: d : 3853985
-2024-05-05 17:46:36,371 - INFO - Write transaction in json id: 45f14788-0aee-11ef-9b09-05761b21ff18
-2024-05-05 17:46:39,505 - WARNING - Position for delete out of range: -1, max: 3}
+2024-05-06 17:03:44,766 - INFO - Balance was changed, current balance: -847524.
+2024-05-06 17:03:44,766 - INFO - Add transaction: r : 847524
+2024-05-06 17:03:44,766 - INFO - Write transaction in json id: 738d8473-0bb1-11ef-8755-00155d2b3ba3
+2024-05-06 17:03:55,808 - INFO - Write transaction in json id: 738d8473-0bb1-11ef-8755-00155d2b3ba3
+2024-05-06 17:04:26,990 - INFO - Balance was changed, current balance: 98264489.
+2024-05-06 17:04:26,991 - INFO - Add transaction: d : 98264489
+2024-05-06 17:04:26,991 - INFO - Write transaction in json id: 8cba4063-0bb1-11ef-b04f-00155d2b3ba3
+2024-05-06 17:05:46,846 - INFO - Write transaction in json id: 8cba4063-0bb1-11ef-b04f-00155d2b3ba3
+2024-05-06 17:05:55,235 - INFO - Balance was changed, current balance: 45254.
+2024-05-06 17:05:55,235 - INFO - Add transaction: d : 45254
+2024-05-06 17:05:55,236 - INFO - Write transaction in json id: c1534517-0bb1-11ef-92c4-00155d2b3ba3
+2024-05-06 17:06:03,638 - INFO - Balance was changed, current balance: -20080.
+2024-05-06 17:06:03,638 - INFO - Add transaction: r : 65334
+2024-05-06 17:06:03,639 - INFO - Write transaction in json id: c6557e1c-0bb1-11ef-a5db-00155d2b3ba3

@@ -12,7 +12,8 @@ MAIN_MENUE_TEXT = (
     "1. Add transaction\n"
     "2. Delete transaction\n"
     "3. Get transactions list\n"
-    "4. Exit \n"
+    "4. Edit transaction \n"
+    "5. Exit \n"
     "Select command: "
 )
 
@@ -56,7 +57,6 @@ def input_transaction_data() -> list:
     description = input("Input description: ")
     return [category, value, description]
 
-
 def print_transactions_list(transactions: list) -> None:
     """Formated transactions list print."""
     counter = 1
@@ -76,9 +76,9 @@ def main() -> None:
     command = 0
     while True:
         cls()
+        print(f"Balance: {wallet.balance}.")
         match command:
-            case 0: #for clear terminal 
-                print(f"Balance: {wallet.balance}.")
+            case 0: #for clear terminal
                 command = int(input(MAIN_MENUE_TEXT))
             case 1: #for add transaction
                 category, value, description = input_transaction_data()
@@ -87,7 +87,9 @@ def main() -> None:
                 print(f"Balance: {wallet.balance}.")
                 command = int(input(MAIN_MENUE_TEXT))
             case 2: # for delete transaction
-                print(f"Balance: {wallet.balance}.")
+                transactions = wallet.read_transactions()
+                transactions = transactions["transactions"]
+                print_transactions_list(transactions)
                 command = int(input(DELETE_MENUE_TEXT))
                 if not(wallet.delete_transaction(command - 1)):
                     cls()
@@ -95,7 +97,7 @@ def main() -> None:
                     command = int(input(MAIN_MENUE_TEXT))
                     continue
                 cls()
-                print(f'#Transaction was deleted...')
+                print('#Transaction was deleted...')
                 command = int(input(MAIN_MENUE_TEXT))
             case 3:# for print transactions list
                 transactions = wallet.read_transactions()
@@ -103,9 +105,24 @@ def main() -> None:
                 print_transactions_list(transactions)
                 print(f"Balance: {wallet.balance}.")
                 command = int(input(MAIN_MENUE_TEXT))
-            case 4: #for exit
+            case 4:#for edit transaction
+                transactions = wallet.read_transactions()
+                transactions = transactions["transactions"]
+                print_transactions_list(transactions)
+                position = input('Select transaction for edit: ')
+                while not (position.isdigit()):
+                    print('#Input transaction id: int...')
+                    position = input('Select transaction for edit: ')
+                position = int(position)
+                resp = wallet.edit_transaction(position-1,input_transaction_data())
+                cls()
+                if not resp:
+                    print('#Index out of range...')
+                else:
+                    print('#Transaction was deleted...')
+                command = int(input(MAIN_MENUE_TEXT))
+            case 5: #for exit
                 break
-
 
 if __name__ == "__main__":
     logging.basicConfig(
